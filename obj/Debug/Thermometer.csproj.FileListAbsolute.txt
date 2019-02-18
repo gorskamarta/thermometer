@@ -1,0 +1,10 @@
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\bin\Debug\Thermometer.exe.config
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\bin\Debug\Thermometer.exe
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\bin\Debug\Thermometer.pdb
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.csprojResolveAssemblyReference.cache
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.Form1.resources
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.Properties.Resources.resources
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.csproj.GenerateResource.Cache
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.csproj.CoreCompileInputs.cache
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.exe
+D:\ZaawansowaneProgramowanieObiektowe\Zaliczenie\Thermometer\Thermometer\obj\Debug\Thermometer.pdb
