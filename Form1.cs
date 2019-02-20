@@ -12,7 +12,6 @@ namespace Thermometer
 {
     public partial class Form1 : Form
     {
-        //class level bitmaps
         Bitmap img;
         Bitmap bar;
 
@@ -23,37 +22,17 @@ namespace Thermometer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //initialize class level bitmaps
             img = Properties.Resources.tempscalessmall;
             bar = Properties.Resources.bar;
-            //make Color.White transparent in bar image
-            //bar.MakeTransparent(Color.White);
-            //trigger NumericUpDowns.ValueChanged
             numericUpDown1.Value += 1;
             numericUpDown1.Value -= 1;
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            //if still loading exit sub
-            if (numericUpDown1.Value == null | img == null | bar == null)
-                return;
 
-            //create new background image for thermometers
             Bitmap newImg = new Bitmap(img);
             Graphics gr = Graphics.FromImage(newImg);
-
-            /*
-            //calculate height of bar1
-            int barTop = (numericUpDown1.Value > 290 ? 2 : 0) + Convert.ToInt32(255 - (((250 - numericUpDown1.Value) / 10) * -20));
-            //create a new bitmap for this thermometer bar
-            Bitmap bar1 = new Bitmap(12, 264 - barTop);
-            Graphics gr1 = Graphics.FromImage(bar1);
-            //draw part of original bar image into new bitmap
-            gr1.DrawImage(bar, new Rectangle(Point.Empty, bar1.Size), new Rectangle(0, Properties.Resources.bar.Height - bar1.Height, 12, bar1.Height), GraphicsUnit.Pixel);
-            //draw new bar image onto new background image
-            gr.DrawImage(bar1, new Point(61, barTop));
-            */
             
             //calculate height of bar2
             int barTop = (numericUpDown1.Value > 0 ? 9 : 7) + Convert.ToInt32(((100 - numericUpDown1.Value) / 10) * 20);
@@ -65,18 +44,6 @@ namespace Thermometer
             //draw new bar image onto new background image
             gr.DrawImage(bar2, new Point(162, barTop));
 
-            /*
-            //calculate height of bar3
-            barTop = 15 + Convert.ToInt32(((210 - NumericUpDown3.Value) / 10) * 11);
-            //create a new bitmap for this thermometer bar
-            Bitmap bar3 = new Bitmap(12, 264 - barTop);
-            Graphics gr3 = Graphics.FromImage(bar3);
-            //draw part of original bar image into new bitmap
-            gr3.DrawImage(bar, new Rectangle(Point.Empty, bar3.Size), new Rectangle(0, Properties.Resources.bar.Height - bar3.Height, 12, bar3.Height), GraphicsUnit.Pixel);
-            //draw new bar image onto new background image
-            gr.DrawImage(bar3, new Point(266, barTop));
-            */
-            //set PictureBox1.Image = new background image
             pictureBox1.Image = newImg;
         }
     }
